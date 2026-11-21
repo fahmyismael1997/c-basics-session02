@@ -1,4 +1,7 @@
-﻿namespace c_basics_session02
+﻿using System.Numerics;
+using System.Timers;
+
+namespace c_basics_session02
 {
     class Book
     {
@@ -22,19 +25,24 @@
             /*Using the Book class above, print the result of calling ToString(), Equals() (compare book with
             itself), GetHashCode(), and GetType() on book*/
 
-            object book=new Book();
-            Console.WriteLine("the results : ");
+            //object book=new Book();
+            //Console.WriteLine("the results : ");
 
-            Console.WriteLine($"toString() = {book.ToString()}");
+            //Console.WriteLine($"toString() = {book.ToString()}");
 
-            Console.WriteLine($"Equals() = { book.Equals(book)}");
+            //Console.WriteLine($"Equals() = { book.Equals(book)}");
 
-            Console.WriteLine($"GetHashCode() = {book.GetHashCode()}");
+            //Console.WriteLine($"GetHashCode() = {book.GetHashCode()}");
 
-            Console.WriteLine($"GetType() = {book.GetType()}");
+            //Console.WriteLine($"GetType() = {book.GetType()}");
             #endregion
 
+            #region Question 3
+            /*3-Look at the line below.Is it a compile - time error, a runtime error, or a logical error? Fix it.
+             int pages = "464";*/
 
+            int pages = 464;//int pages="464" is compile Error 
+            #endregion
         }
     }
 }
