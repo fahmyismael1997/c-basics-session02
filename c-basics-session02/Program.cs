@@ -83,11 +83,24 @@ namespace c_basics_session02
             #region Question 7
             /*Given string pagesText = "464";, convert it into an int using the Convert class*/
 
-            string pagesText = "464";
-            int pagesT = Convert.ToInt32(pagesText);
-            
+            //string pagesText = "464";
+            //int pagesT = Convert.ToInt32(pagesText);
+
             #endregion
 
+
+            #region Question 8
+            /* 8-Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";,
+             use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.*/
+
+            string yearText = "2023",badText="abc";
+            int year=int.Parse(yearText);
+
+            if (!int.TryParse(badText,out year))
+            {
+                Console.WriteLine("Invalid number");
+            }
+            #endregion
         }
     }
 }
