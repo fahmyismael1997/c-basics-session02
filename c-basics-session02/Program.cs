@@ -41,7 +41,26 @@ namespace c_basics_session02
             /*3-Look at the line below.Is it a compile - time error, a runtime error, or a logical error? Fix it.
              int pages = "464";*/
 
-            int pages = 464;//int pages="464" is compile Error 
+            //int pages = 464;//int pages="464" is compile Error 
+            #endregion
+
+            #region Qustion 4
+            /*4-Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot divide by
+            zero", and then prints "Done" in a finally block.*/
+
+            int x = 10, y = 0;
+            try
+            {
+                Console.WriteLine(x / y);
+            }
+            catch (DivideByZeroException ex)
+            {
+
+                Console.WriteLine("Cannot divide by zero");
+            } finally 
+            {
+                Console.WriteLine("Done");
+            }   
             #endregion
         }
     }
