@@ -66,18 +66,26 @@ namespace c_basics_session02
             #region Question 5
             /* 5-  Declare an int pages = 300; then store it in a double variable without using a cast*/
 
-            int pages = 300;
-            double p = pages;
+            //int pages = 300;
+            //double p = pages;
 
             #endregion
 
             #region Question 6
             /*Declare a double price = 49.99; then convert it into an int using a cast*/
-           
-            double price = 49.99;
-            int pr= (int)price;
+
+            //double price = 49.99;
+            //int pr= (int)price;
+
+
+            #endregion
+
+            #region Question 7
+            /*Given string pagesText = "464";, convert it into an int using the Convert class*/
+
+            string pagesText = "464";
+            int pagesT = Convert.ToInt32(pagesText);
             
-             
             #endregion
 
         }
